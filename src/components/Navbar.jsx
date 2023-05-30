@@ -49,7 +49,7 @@ const Navbar = () => {
             /*toggle not working*/
             alt="menu"
             className='w-[28px] h-[28px] object-contain cursor-pointer'
-            onclick={() => setToggle(!toggle)}
+            onClick={() => setToggle(!toggle)}
           />
           <div className={`${toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${active === link.title ? "text-white" : "text-secondary"} font-popins font-medium cursor-pointer text-[16px]`}
-                  onclick={() => {
+                  onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
                   }}
