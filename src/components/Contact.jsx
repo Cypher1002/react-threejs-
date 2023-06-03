@@ -7,20 +7,55 @@ import {EarthCanvas} from './canvas';
 import {SectionWrapper} from '../hoc';
 import { slideIn } from '../utils/motion';
 
+//template_2dbjp6j
+//service id :- service_z1wuc6b
+//public key _bx0Zn-AI4Svi6L-k
 
 const Contact = () => {
+  const formRef = useRef();
   const [form, setForm] = useState({
     name:'',
     email:'',
-    message:"",
+    message:'',
   });
   const [loading,setLoading] = useState(false);
 
-  const handleChange = (e)=>{}
+  const handleChange =(e)=>{
 
-  const handleSubmit = (e) =>{}
+    const { name, value} = e.target;
+    setForm({...form ,[name]:value})
+  }
 
-  const formRef = useRef();
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    setLoading(true)
+
+    emailjs.send('service_z1wuc6b','template_2dbjp6j',
+    {
+      from_name: form.name,
+      to_name: 'Mehul',
+      from_email: form.email,
+      to_email:'mehuldarshni42@gmail.com',
+      message: form.message,
+    },
+    '_bx0Zn-AI4Svi6L-k'
+    )
+    .then(()=>{
+      setLoading(false);
+      alert('Thank you .I will get back to you as soon as possible.');
+
+      setForm({
+        name:'',
+        email:'',
+        message:'',
+      })
+    },(error)=>{
+        setLoading(false)
+        console.log(error);
+        alert('something went wrong')
+    })
+  }
+
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -58,18 +93,33 @@ const Contact = () => {
 
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>
-              Your Name
+              Your Message
             </span>
-            <input 
-            type="text"
-            value={form.name}
+            <textarea 
+            rows='7'
+            value={form.message}
             onChange={handleChange}
-            placeholder="whats your name"
+            placeholder="Write Your message"
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
           </label>
+          <button
+           type="submit"
+            className='bg-tertiary py-4 px-8 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
+           >
+             {loading? 'Sending...':"Send"}
+           </button>
         </form>
       </motion.div>
+
+
+      <motion.div 
+      variants={slideIn('right', 'tween', 0.2, 1)}
+      className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+         <EarthCanvas/>
+      </motion.div>
     </div>
+    
   )
 }
 
