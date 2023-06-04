@@ -11,7 +11,7 @@ import {
 } from '../hoc';
 
 import { textVariant } from '../utils/motion';
-import { Point } from '@react-three/drei';
+
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
