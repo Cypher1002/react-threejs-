@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
 
         <Link
-          to="/" className="flex items-center gap-2" onclick={() => {
+          to="/" className="flex items-center gap-2" onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}>
@@ -35,7 +35,7 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
-              onclick={() => setActive(link.title)}
+              onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
