@@ -1,11 +1,12 @@
-import React from 'react'
-import { useState,useRef } from 'react'
-import { motion } from 'framer-motion'
+
+import React ,{ useState,useRef } from 'react';
+import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import {styles} from '../styles';
 import {EarthCanvas} from './canvas';
 import {SectionWrapper} from '../hoc';
 import { slideIn } from '../utils/motion';
+
 
 //template_2dbjp6j
 //service id :- service_z1wuc6b
@@ -23,7 +24,7 @@ const Contact = () => {
   const handleChange =(e)=>{
 
     const { name, value} = e.target;
-    setForm({...form ,[name]:value})
+    setForm({...form ,name,value})
   }
 
   const handleSubmit = (e) =>{
@@ -73,6 +74,7 @@ const Contact = () => {
             </span>
             <input 
             type="text"
+            name="name"
             value={form.name}
             onChange={handleChange}
             placeholder="what's your name"
@@ -85,6 +87,7 @@ const Contact = () => {
             </span>
             <input 
             type="email"
+            name="email"
             value={form.email}
             onChange={handleChange}
             placeholder="what's your email"
@@ -97,6 +100,7 @@ const Contact = () => {
             </span>
             <textarea 
             rows='7'
+            name='message'
             value={form.message}
             onChange={handleChange}
             placeholder="Write Your message"
@@ -108,6 +112,7 @@ const Contact = () => {
            >
              {loading? 'Sending...':"Send"}
            </button>
+           
         </form>
       </motion.div>
 
