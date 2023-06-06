@@ -43,19 +43,20 @@ import {
   const services = [
     {
       title: "Web Developer",
-      icon: web,
+      icon:mobile,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
+      title: "Frontend Developer",
+      icon: web ,
+   },
     {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
+      title: "video editor",
       icon: creator,
+    },
+   
+    {
+      title: "Tech-Enthusiast",
+      icon : backend,
     },
   ];
   
@@ -73,28 +74,12 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "Three JS",
@@ -108,63 +93,44 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Contributor",
+      company_name: "Girlscript Summer of code",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March 2022 - may 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Collaborating with people across the world.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Open-Source Contributor",
+      company_name: "Social Summer of Code",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "jun 2022 - oct 2022 || jun 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing and contributing to web applications using HTML , CSS, JavaScript and other related technologies.",
+        "Collaborating with peole ande mergeing pull-requests.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Open-source Contributors ",
+      company_name: "HactoberFest",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Oct 2022 - Oct 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing and maintaining web applications using React.js, JavaScript and other related technologies.",
+        "Collaborating witfellow developers to create resposive sites which are deployable on web.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Participating in code reviews",
       ],
     },
   ];
@@ -173,7 +139,7 @@ import {
     {
       testimonial:
         "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
+      name: "Rajeev Krishna",
       designation: "CFO",
       company: "Acme Co",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
@@ -198,16 +164,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Crypto-Tracker",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developed a web application that shows Real Time price of top 50 cryptocurrencies in the world using coinGeko api anlso used the same api for converting the currency rate in inr, gbr, dollars etc",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "APi",
           color: "green-text-gradient",
         },
         {
@@ -216,40 +182,36 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://621b3a8cd9ab74f32f50e342--suspicious-liskov-1ace49.netlify.app/",
     },
     {
-      name: "Job IT",
+      name: "GPT-landing page",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Designed and developed the captivating landing page of the GTP website using React, showcasing UI/UX skills .Leveraged React components and libraries to create an interactive and responsive user interface ",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "TaildwindCSS",
           color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
         },
       ],
       image: jobit,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "News App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "created a news app using ReactJs . Fetcing real time news from news API .Also created custom sections according to diffrent news . Helped to leveraging the power of React components, state management, and routing to create a robust and scalable application",
       tags: [
         {
-          name: "nextjs",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "newsAPI",
           color: "green-text-gradient",
         },
         {
