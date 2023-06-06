@@ -23,6 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    grilScript,
+    hacktober,
+    social
   } from "../assets";
   
   export const navLinks = [
@@ -99,7 +102,7 @@ import {
     {
       title: "Contributor",
       company_name: "Girlscript Summer of code",
-      icon: starbucks,
+      icon: grilScript,
       iconBg: "#383E56",
       date: "March 2022 - may 2022",
       points: [
@@ -111,7 +114,7 @@ import {
     {
       title: "Open-Source Contributor",
       company_name: "Social Summer of Code",
-      icon: tesla,
+      icon: social,
       iconBg: "#E6DEDD",
       date: "jun 2022 - oct 2022 || jun 2023",
       points: [
@@ -123,7 +126,7 @@ import {
     {
       title: "Open-source Contributors ",
       company_name: "HactoberFest",
-      icon: shopify,
+      icon: hacktober,
       iconBg: "#383E56",
       date: "Oct 2022 - Oct 2023",
       points: [
