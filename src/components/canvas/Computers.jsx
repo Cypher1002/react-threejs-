@@ -20,10 +20,11 @@ const Computers =({isMobile})=>{
        castShadow
        shadow-mapsize={1024}
        />
+       <pointLight intensity={1}/>
        <primitive 
          object ={computer.scene}
-         scale={isMobile?0.4:0.45}
-         position={isMobile?[0,-4,-1.2]:[0,-4.25,-1.5]}
+         scale={isMobile?0.4 : 0.45}
+         position={isMobile?[-3,-3,-2.2]:[-3,-3.25,-1.5]}
          rotation={[-0.01,-0.2,-0.1]}
          />
       </mesh>
@@ -33,19 +34,19 @@ const Computers =({isMobile})=>{
 const ComputersCanvas =()=>{
   const [isMobile,setIsMobile]= useState(false);
   useEffect(()=>{
-    const mediaQuery = window.matchMedia('(max-width:500px)');
+    const mediaQuery = window.matchMedia("(max-width:500px)");
 
 
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange=(event)=>{ setIsMobile(event.matches);
     }
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
 
     return()=>{
-      mediaQuery.removeEventListener('change',handleMediaQueryChange);
+      mediaQuery.removeEventListener("change",handleMediaQueryChange);
     }
-  },[])
+  },[]);
   return(
     <Canvas
      frameloop = "demand"
