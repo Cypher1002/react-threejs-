@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -32,6 +32,8 @@ import tripguide from "./tripguide.png";
 import grilScript from './girlScript.png';
 import hacktober from "./hacktober.jpeg";
 import social from "./social.jpeg";
+import link from "./link.jpeg";
+import avatar from "./avatar.jpeg";
 export {
   logo,
   backend,
@@ -63,5 +65,7 @@ export {
   tripguide,
   grilScript,
   hacktober,
-  social
+  social,
+  link,
+  avatar,
 };

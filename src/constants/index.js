@@ -25,7 +25,7 @@ import {
     threejs,
     grilScript,
     hacktober,
-    social
+    social,
   } from "../assets";
   
   export const navLinks = [
@@ -186,6 +186,7 @@ import {
       ],
       image: carrent,
       source_code_link: "https://621b3a8cd9ab74f32f50e342--suspicious-liskov-1ace49.netlify.app/",
+      website_link: "https://621b3a8cd9ab74f32f50e342--suspicious-liskov-1ace49.netlify.app/",
     },
     {
       name: "GPT-landing page",
@@ -203,6 +204,7 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/",
+      website_link: "https://react-gpt3-beige.vercel.app/ ", 
     },
     {
       name: "News App",
@@ -223,7 +225,7 @@ import {
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Cypher1002/news-App",
     },
   ];
   
