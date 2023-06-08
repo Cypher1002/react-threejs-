@@ -21,9 +21,9 @@ const Hero = () => {
       </div>
      </div>
      {/* <ComputersCanvas/> */}
-    < div  className="flex flex-col" >
+    < div  className="flex flex-col " >
         <img src={avatar} 
-        className='w-[40%] h-[40%] rounded-full  ml-[55%] mt-[20%] '/>
+        className='w-[30%] h-[30%] rounded-full ml-[55%] mt-[15%] '/>
         </div>
 
      <div className='absolute xs:bottom-10 bottom-22 w-full flex justify-center items-center'>
