@@ -23,7 +23,7 @@ const Hero = () => {
      {/* <ComputersCanvas/> */}
     < div  className="flex flex-col " >
         <img src={avatar} 
-        className='w-[30%] h-[30%] rounded-full ml-[55%] mt-[15%] '/>
+        className='w-[30%] h-[30%] rounded-full ml-[55%] mt-[15%] sm:hidden'/>
         </div>
 
      <div className='absolute xs:bottom-10 bottom-22 w-full flex justify-center items-center'>
