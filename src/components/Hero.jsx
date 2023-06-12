@@ -23,12 +23,12 @@ const Hero = () => {
      {/* <ComputersCanvas/> */}
     < div  className="flex flex-col " >
         <img src={avatar} 
-        className='w-[30%] h-[30%] rounded-full ml-[55%] mt-[15%] sm:hidden'/>
+        className='w-[30%] h-[30%] rounded-full ml-[55%] mt-[15%] '/>
         </div>
 
      <div className='absolute xs:bottom-10 bottom-22 w-full flex justify-center items-center'>
        <a href="#about">
-         <div className='w-[35px]  h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+         <div className='w-[35px]  h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 mt-[200px] mr-[150px]'>
            <motion.div
            animate={{
              y:[0,24,0]
